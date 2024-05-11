@@ -2,46 +2,58 @@ body {
 	background: black;
 }
 * {
-	border: 1px dashed red;
 	min-height: 10px;
 }
 .postcard {
-	background-color: white;
-	width: 700px;
-	height: 600px;
+	background-image: url("https://images.squarespace-cdn.com/content/v1/6127310e067bcd08b5dc4a2b/1668889307112-ZSW92C8CHH1LBF7BKRJZ/20140329_111232-2.jpg?format=1500w");
+	width: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	margin: auto;
 }
-.postcard-header content {
+.postcard-header img {
+	width: 40px;
+	float: right;
+	margin-left: 300px;
+}
+.postcard-header {
+	display: flex;
+	height: 50px;
 	display: flex;
 }
-.postcard-header img {
-	width: 50px;
-	float: top;
-	margin-left: 10px;
-}
 .postcard-header h1 {
-	width: 100px;
+	width: 25px;
 	margin-left: 10px;
+	font-size: 30px;
 }
 .postcard-body {
 	display: flex;
+	width: 100%;
+	text-shadow: #fc0 1px 0 10px;
+	color: black;
 }
 .body-left p:first-child {
-	margin-top: 10px;
+	margin-top: 1px;
 	padding: 2%;
 }
 .body-left,
 .body-right {
-	padding: 10%;
+	padding: 5%;
+	flex-basis: 50%;
 }
 .body-right {
 	margin-top: 1px;
 	display: flex;
 	flex-direction: column;
+	font-size: 10px;
 }
 .body-left p {
 	font-size: 20px;
+	color: rgb(0, 0, 0);
 	display: block;
+	line-height: 20px;
+	text-align: center;
 }
 .input-line {
 	display: block;
@@ -54,10 +66,12 @@ body {
 	outline: none;
 	width: 100%;
 	padding-bottom: 5px;
+	font-size: 12px;
 }
 .postcard-footer {
 	text-align: center;
-	background-color: blue;
-	padding: 5px;
-	display: inline-block;
+	width: 100%;
+}
+.button {
+	background-color: rgb(243, 255, 140);
 }
